@@ -1,0 +1,151 @@
+<style>
+:root{--paper:#fffcf5;--surface:#fff;--ink:#243d43;--muted:#566b6d;--line:#d1ddd5;--accent:#237664;--soft:#e9f4ed;color-scheme:light}
+:root:has([role=tab][aria-selected=true][id$="-tab-0"]){--accent:#914c51}
+:root:has([role=tab][aria-selected=true][id$="-tab-2"]){--accent:#88631c}
+:root:has([role=tab][aria-selected=true][id$="-tab-3"]){--accent:#386781}
+.stApp, [data-testid=stHeader]{background:var(--paper);color:var(--ink)}
+.stApp{font-family:'Segoe UI',Arial,sans-serif}
+[role=tabpanel]{--button-bg:#dcf0e7;--button-hover:#c9e7d8;--button-line:#9abdae;--button-ink:#205e51}
+[role=tabpanel][id$="-tabpanel-0"]{--accent:#914c51;--soft:#fce5d9;--line:#dfbbb5;--button-bg:#fce5d9;--button-hover:#f6d0c7;--button-line:#d7aaa5;--button-ink:#773d42}
+[role=tabpanel][id$="-tabpanel-2"]{--accent:#88631c;--soft:#fbedbd;--line:#dcc78d;--button-bg:#fbedbd;--button-hover:#f5df98;--button-line:#cfb56f;--button-ink:#68501d}
+[role=tabpanel][id$="-tabpanel-3"]{--accent:#386781;--soft:#e0edf7;--line:#afc9da;--button-bg:#e0edf7;--button-hover:#c9dfef;--button-line:#99bdcf;--button-ink:#2b526b}
+[role=tabpanel]{--primary-color:var(--accent);--primaryColor:var(--accent);--st-primary-color:var(--accent);--st-primary-background-color:var(--soft);--st-primary-text-color:var(--button-ink)}
+[data-baseweb=tab]:nth-child(1){--accent:#914c51;--tab-line:#d7aaa5}
+[data-baseweb=tab]:nth-child(2){--accent:#237664;--tab-line:#9abdae}
+[data-baseweb=tab]:nth-child(3){--accent:#88631c;--tab-line:#cfb56f}
+[data-baseweb=tab]:nth-child(4){--accent:#386781;--tab-line:#99bdcf;background:#e0edf7}
+[role=tabpanel] [data-baseweb=checkbox] [aria-checked=true], [role=tabpanel] [data-baseweb=radio] input:checked~div{border-color:var(--accent)!important}
+[role=tabpanel] [data-baseweb=checkbox]:has(input:checked)>span:first-of-type{background:var(--accent)!important;border-color:var(--accent)!important}
+[role=tabpanel] [data-baseweb=radio]>div:first-of-type{border-color:var(--accent)!important}
+[role=tabpanel] [data-baseweb=radio]:has(input:checked)>div:first-of-type{background:var(--accent)!important}
+[role=tabpanel] [data-baseweb=slider] [role=slider]{background:var(--accent)!important;border-color:var(--accent)!important}
+[role=tabpanel] [data-baseweb=slider] [role=slider] div{background:var(--accent)!important}
+[role=tabpanel] [data-baseweb=slider]>div>div>div{background:var(--accent)!important}
+[role=tabpanel] [data-baseweb=slider]>div>div{background:var(--line)!important}
+[role=tabpanel] [data-baseweb=slider] [data-testid=stTickBar]{color:var(--accent)!important}
+[role=tabpanel] [data-testid=stProgress] [role=progressbar] div{background:var(--accent)!important}
+[role=tabpanel] [data-testid=stAlert] svg{fill:var(--accent)!important;color:var(--accent)!important}
+[role=tabpanel] [data-testid=stSliderThumbValue]{color:var(--accent)!important}
+[role=tabpanel] [data-baseweb=checkbox]>span:first-of-type{border-color:var(--accent)!important}
+[role=tabpanel] [data-testid=stProgress] [role=progressbar]{accent-color:var(--accent)}
+[role=tabpanel] [data-baseweb=input]:focus-within,[role=tabpanel] [data-baseweb=textarea]:focus-within{border-color:var(--accent)!important}
+.type-specimen{background:#fff;border:1px solid var(--line);padding:28px;min-height:280px;border-top:4px solid var(--accent)}
+.type-specimen h3{letter-spacing:normal;line-height:1.15!important;padding:0!important;margin:0 0 24px}
+/* Streamlit 1.67 uses React Aria, rather than the older BaseWeb controls. */
+[role=tabpanel][id$="-tabpanel-0"]{--ink:#57373b;--muted:#79595d}
+[role=tabpanel][id$="-tabpanel-2"]{--ink:#594519;--muted:#796537}
+[role=tabpanel][id$="-tabpanel-3"]{--ink:#2b526b;--muted:#526f83}
+[role=tabpanel] [data-testid=stTextInputField],[role=tabpanel] [data-testid=stTextAreaRootElement] textarea{background:transparent!important}
+[role=tabpanel] [data-testid=stMarkdownContainer] a{color:var(--accent)!important}
+[role=tabpanel] [data-testid=stTextAreaRootElement],
+[role=tabpanel] [data-testid=stTextInputRootElement],
+[role=tabpanel] [data-testid=stTextInput] .react-aria-Group{background:var(--soft)!important;border-color:var(--line)!important}
+[role=tabpanel] [data-testid=stTextAreaRootElement]:focus-within,
+[role=tabpanel] [data-testid=stTextInputRootElement]:focus-within{border-color:var(--accent)!important;box-shadow:0 0 0 1px var(--accent)!important}
+[role=tabpanel] textarea,[role=tabpanel] input{caret-color:var(--accent);accent-color:var(--accent)}
+[role=tabpanel] ::selection{background:var(--soft);color:var(--ink)}
+[role=tabpanel] [data-testid=stCheckbox] label>div:first-of-type{background:var(--surface)!important;border-color:var(--accent)!important}
+[role=tabpanel] [data-testid=stCheckbox] label[data-selected]>div:first-of-type{background:var(--accent)!important;border-color:var(--accent)!important}
+[role=tabpanel] [data-testid=stCheckbox] label[data-selected]>div:first-of-type svg{stroke:white!important;color:white!important}
+[role=tabpanel] [data-testid=stCheckbox] label[data-selected]>div:first-of-type svg polyline{stroke:white!important}
+[role=tabpanel] [data-testid=stCheckbox] label[data-focus-visible]{outline:2px solid var(--accent);outline-offset:3px;background:var(--soft)!important}
+[role=tabpanel] [data-testid=stRadioOption]>div>div:first-child{background:var(--surface)!important;border:1px solid var(--accent)!important}
+[role=tabpanel] [data-testid=stRadioOption][data-selected]>div>div:first-child{background:var(--accent)!important;border-color:var(--accent)!important}
+[role=tabpanel] [data-testid=stSlider] .react-aria-SliderThumb{background:var(--accent)!important;box-shadow:none!important}
+[role=tabpanel] [data-testid=stSlider] .react-aria-SliderTrack>div:first-child{background:var(--accent)!important;opacity:.65}
+[role=tabpanel] [data-testid=stSlider] [data-testid=stSliderThumbValue],
+[role=tabpanel] [data-testid=stSlider] [data-testid=stSliderThumbValue] p{color:var(--accent)!important;background:transparent!important}
+[role=tabpanel] [data-testid=stSlider] .react-aria-SliderThumb[data-focus-visible]{outline:3px solid var(--accent);outline-offset:3px}
+[role=tabpanel] [data-testid=stAlert] [data-testid=stMarkdownContainer] p{color:var(--button-ink)!important}
+[role=tabpanel] [data-testid=stAlert]{background:var(--soft)!important;color:var(--ink)!important;border:1px solid var(--line)}
+[role=tabpanel] [data-testid=stProgress] [role=progressbar]>div{background:var(--accent)!important}
+[role=tabpanel] [data-testid=stCheckbox] input:checked+div,[role=tabpanel] [data-testid=stRadio] input:checked+div{background:var(--accent)!important;border-color:var(--accent)!important}
+.block-container{max-width:1120px;padding:8rem 2.5rem 4rem}
+h1,h2,h3,p,label,.stMarkdown{color:var(--ink)}
+h1{font-family:'Segoe UI',Arial,sans-serif!important;font-weight:750!important;font-size:clamp(2.4rem,5vw,3.8rem)!important;letter-spacing:-.045em!important;max-width:950px;line-height:1.12!important}
+h2{font-size:1.75rem!important;font-weight:500!important;letter-spacing:-.025em;padding-top:1.5rem!important}
+h3{font-size:1.2rem!important;font-weight:600!important}
+.intro{font-size:1.15rem;line-height:1.8;max-width:700px;color:var(--muted);margin:1rem 0 2rem}
+.eyebrow{font-size:.72rem;letter-spacing:.18em;font-weight:700;color:var(--accent)}
+[data-testid=stCaptionContainer], [data-testid=stCaptionContainer] p{color:var(--muted)!important}
+[data-testid=stMetric]{border-top:2px solid var(--accent);background:var(--soft);padding:20px 24px;margin:12px 0 20px}
+[data-testid=stMetricValue]{font-family:Georgia,serif;font-size:2.3rem}
+.stButton button,.stDownloadButton button,[data-testid=stFormSubmitButton] button{border-radius:5px!important;border:1px solid var(--button-line,#9abdae)!important;min-height:44px;padding:10px 20px!important;color:var(--button-ink,#205e51)!important;background:var(--button-bg,#dcf0e7)!important;font-weight:600;box-shadow:0 2px 0 var(--button-line,#bdd7c9);transition:background .18s,box-shadow .18s}
+.stButton button:hover,.stDownloadButton button:hover{background:var(--button-hover,#c9e7d8)!important;box-shadow:0 3px 0 var(--button-line,#9abdae)}
+.stButton button:active,.stDownloadButton button:active{box-shadow:none}
+.stButton button:disabled,.stDownloadButton button:disabled{opacity:.45;box-shadow:none;cursor:not-allowed}
+.stButton button[kind=primary]{background:var(--accent)!important;color:white!important;border-color:var(--accent)!important}
+.stButton button[kind=primary] p{color:white!important}
+[data-testid=stImage] button,[data-testid=stImage] [data-testid=stImageToolbar],button[aria-label="Fullscreen"],[data-testid=stElementToolbar]:has(button[aria-label="Fullscreen"]){display:none!important}
+.color-swatch{height:104px;border:1px solid #0002;border-radius:5px;margin:8px 0}
+button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--accent)!important;outline-offset:3px}
+[data-baseweb=tab-list]{gap:12px;border-bottom:0;padding:8px 0 20px}
+[data-baseweb=tab]{color:var(--ink);padding:18px 24px;font-size:1rem;flex:1;border:1px solid var(--line);border-radius:5px;background:var(--surface);min-height:62px;transition:background .18s,box-shadow .18s}
+[data-baseweb=tab]:nth-child(1){background:#fce5d9}[data-baseweb=tab]:nth-child(2){background:#dcf0e7}[data-baseweb=tab]:nth-child(3){background:#fbedbd}
+[data-baseweb=tab][aria-selected=true]{color:var(--ink);box-shadow:inset 0 -4px 0 var(--accent);border-color:var(--accent);font-weight:700}
+[data-baseweb=tab]:hover{box-shadow:inset 0 -4px 0 var(--tab-line)}
+[data-baseweb=tab-highlight],[data-baseweb=tab-border]{display:none}
+[data-testid=stExpander]{border-radius:2px!important;border-color:var(--line)!important}
+[data-baseweb=input],[data-baseweb=textarea],[data-baseweb=select]>div{background:var(--surface)!important;color:var(--ink)!important;border-color:var(--line)!important;border-radius:3px!important}
+input,textarea{color:var(--ink)!important;-webkit-text-fill-color:var(--ink)!important}
+.prisma-nav{position:fixed;top:0;left:0;right:0;z-index:999990;background:var(--paper);border-bottom:1px solid var(--line);font:14px 'Segoe UI',sans-serif;color:var(--ink)}
+.prisma-nav-inner{max-width:1120px;margin:auto;display:flex;align-items:center;gap:28px;padding:20px 40px}
+.prisma-brand{font-family:Georgia,serif;font-size:26px;letter-spacing:.08em;margin-right:auto}
+.brand-dot{display:inline-block;width:10px;height:10px;background:#ed9678;margin-left:6px}.nav-note{font-size:12px;color:var(--muted);margin-right:auto}
+.prisma-nav a,.prisma-float{color:var(--ink);text-decoration:none}
+.prisma-nav a:hover{text-decoration:underline;text-underline-offset:5px}
+.prisma-nav button{font:inherit;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:2px;padding:9px 12px;cursor:pointer;min-height:40px}
+.prisma-links{display:flex;align-items:center;gap:24px}
+#prisma-menu{display:none}
+#prisma-progress{position:absolute;bottom:-1px;left:0;height:2px;background:var(--accent);width:0;transition:width .1s linear}
+.prisma-float{position:fixed;right:24px;z-index:999980;border:1px solid var(--line);background:var(--surface);padding:12px 16px;font:13px 'Segoe UI',sans-serif;box-shadow:0 3px 15px #0000000a}
+#prisma-top{bottom:24px;cursor:pointer}
+.prisma-skip{position:fixed;left:20px;top:-100px;z-index:999999;background:var(--surface);color:var(--ink);padding:12px}.prisma-skip:focus{top:85px}
+@media(max-width:700px){.block-container{padding:7rem 1.2rem 3rem}.prisma-nav-inner{padding:14px 20px;gap:12px}.prisma-brand{font-size:23px}#prisma-menu{display:block}.prisma-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);padding:24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:start}.prisma-links.open{display:flex}[data-baseweb=tab-list]{gap:16px;overflow:auto}[data-baseweb=tab]{font-size:.8rem}.prisma-float{right:12px}}
+/* Content stays visible when browser enhancements are unavailable. */
+[id=inicio],[id=ferramentas],[id=ajuda],[id=contacto]{scroll-margin-top:110px}
+.prisma-reveal{animation:prisma-enter .45s ease-out both}
+@keyframes prisma-enter{from{opacity:.35;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+[data-testid=stImage]{background:var(--soft);border:1px solid var(--line)}
+[data-testid=stImage] img{display:block}
+@media(max-width:700px){.nav-note{display:none}[data-baseweb=tab-list]{gap:6px}[data-baseweb=tab]{padding:12px 8px;font-size:.8rem;min-width:0;min-height:54px}.prisma-brand{margin-right:auto}[data-testid=stImage] img{min-height:125px;object-fit:cover;object-position:right}h2{font-size:1.45rem!important}}
+@media(max-width:700px){[data-baseweb=tab-list]{flex-wrap:wrap}[data-baseweb=tab]{flex:1 1 45%}.type-specimen{padding:18px}.prisma-links{gap:16px}}
+[data-testid=stSkeleton]{border-radius:2px!important;background:var(--soft)!important}
+.prisma-loading{display:none;position:fixed;top:76px;left:0;right:0;height:3px;z-index:999989;overflow:hidden;background:var(--soft)}
+.prisma-loading::after{content:'';display:block;width:30%;height:100%;background:var(--accent);animation:prisma-load 1.5s ease-in-out infinite}
+.prisma-ghost{height:300px;background:var(--soft);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px;border:1px solid var(--line)}
+.prisma-ghost span{height:24px;width:45%;background:var(--line);animation:prisma-pulse 1.4s ease-in-out infinite alternate}
+.prisma-ghost span:nth-child(2){width:65%;animation-delay:.15s}.prisma-ghost span:nth-child(3){width:35%;animation-delay:.3s}
+@keyframes prisma-pulse{to{opacity:.35}}
+body.prisma-busy .prisma-loading{display:block}
+body.prisma-busy [data-testid=stImage]{opacity:.55;transition:opacity .2s}
+@keyframes prisma-load{from{transform:translateX(-100%)}to{transform:translateX(440%)}}
+@media(min-width:701px) and (max-width:1000px){.block-container{padding-inline:2rem}.prisma-nav-inner{padding-inline:24px;gap:16px}.prisma-links{gap:16px}}
+@media(max-width:1000px){.nav-note{display:none}}
+/* Keep editable fields and displayed text light, including Cloud deployments
+   where the browser or Streamlit account prefers a dark theme. */
+.stApp{color-scheme:light!important}
+[role=tabpanel] [data-testid=stTextAreaRootElement],
+[role=tabpanel] [data-testid=stTextInputRootElement],
+[role=tabpanel] [data-testid=stTextInput] .react-aria-Group,
+[role=tabpanel] [data-baseweb=input],
+[role=tabpanel] [data-baseweb=textarea],
+[role=tabpanel] [data-baseweb=select]>div{background:#fff!important;background-image:none!important;color:var(--ink)!important;border-color:var(--line)!important}
+[role=tabpanel] [data-testid=stTextInputField],
+[role=tabpanel] [data-testid=stTextAreaRootElement] textarea,
+.stApp input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]),
+.stApp textarea{background:#fff!important;background-image:none!important;color:var(--ink)!important;-webkit-text-fill-color:var(--ink)!important;color-scheme:light!important}
+.stApp input::placeholder,.stApp textarea::placeholder{color:var(--muted)!important;-webkit-text-fill-color:var(--muted)!important;opacity:1}
+.stApp [data-testid=stSelectbox] [role=combobox],
+.stApp [data-testid=stNumberInputContainer],
+.stApp [data-testid=stFileUploaderDropzone],
+.stApp [data-testid=stCode],.stApp [data-testid=stCodeBlock],
+.stApp [data-testid=stCode] pre,.stApp [data-testid=stCode] code,
+.stApp [data-testid=stCodeBlock] pre,.stApp [data-testid=stCodeBlock] code{background:#fff!important;background-image:none!important;color:var(--ink)!important;border-color:var(--line)!important}
+.stApp [data-testid=stCode] code span,.stApp [data-testid=stCodeBlock] code span{color:var(--ink)!important;background:transparent!important}
+[role=listbox],.react-aria-Popover{color-scheme:light!important;background:#fff!important;color:#243d43!important}
+[role=listbox] [role=option]{background:#fff!important;color:#243d43!important}
+[role=listbox] [role=option]:hover,[role=listbox] [role=option][aria-selected=true]{background:#f3f0e8!important;color:#243d43!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+@media print{.prisma-nav,.prisma-float,.prisma-skip,[data-testid=stToolbar],.stButton,.stDownloadButton,[data-testid=stHeader]{display:none!important}:root{--paper:white;--ink:black;--muted:#333;--soft:#eee;--line:#aaa}.stApp{background:white!important;color:black!important}.block-container{padding:0!important;max-width:none}[data-testid=stMetric]{break-inside:avoid}h1{font-size:30pt!important}h2{break-after:avoid}body{print-color-adjust:exact}}
+</style>
