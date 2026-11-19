@@ -1,4 +1,4 @@
-Nome da Aplicação / Dashboard Web:
+Nome da Aplicação / Dashboard Web: Prisma
 Disciplina: Oficina de Multimédia - 12.o Ano - CRSI
 Ano Letivo: 2026/2027
 Autor: Pedro T. Veiga Lopes
