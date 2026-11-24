@@ -31,4 +31,8 @@ Listagem simples dos ficheiros presentes na pasta:
 4. README.md - Este relatório de projeto.
 5. Assets - Imagens, nuvens de palavras geradas, recursos utilizados, etc.
 
-O que correu melhor durante o desenvolvimento do meu projeto foi fazer a minha pesquisa em o que melhorar no meu trabalho, fazer isso no meu trabalho e ficar bom. A minha maior dificuldade durante o projeto foi as vezes que não conseguia colocar o meu trabalho no streamlit, eu inicialmente tinha dificuldades, mas agora compreendo e, até que era fácil. Eu já faço vibe-coding desde 2024 e tenho noção de como a IA tem melhorado neste aspeto (lembro me especificamente de ficar a discutir durante meia hora com o ChatGPT para me fazer uma camara top-down num dos meus jogos), a IA tem me ajudado a fazer coisas que eu pensava que nunca conseguiria fazer, e agora, é só dar-lhe uma prompt e já está.
+O que correu melhor durante o desenvolvimento do meu projeto foi fazer a minha pesquisa em o que melhorar no meu trabalho, fazer isso no meu trabalho e ficar bom. 
+
+A minha maior dificuldade durante o projeto foi as vezes que não conseguia colocar o meu trabalho no streamlit, eu inicialmente tinha dificuldades, mas agora compreendo e, até que era fácil. 
+
+Eu já faço vibe-coding desde 2024 e tenho noção de como a IA tem melhorado neste aspeto (lembro me especificamente de ficar a discutir durante meia hora com o ChatGPT para me fazer uma camara top-down num dos meus jogos), a IA tem me ajudado a fazer coisas que eu pensava que nunca conseguiria fazer, e agora, é só dar-lhe uma prompt e já está.
