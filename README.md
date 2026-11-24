@@ -1,8 +1,13 @@
 Nome da Aplicação / Dashboard Web: Prisma
+
 Disciplina: Oficina de Multimédia - 12.o Ano - CRSI
+
 Ano Letivo: 2026/2027
+
 Autor: Pedro T. Veiga Lopes
+
 Turma: 12.ºA3
+
 Link da Aplicação Web: https://prisma-multimedia.streamlit.app
 
 Descrição: Explica em 2 a 3 frases o objetivo do teu Dashboard / Web App
