@@ -10,6 +10,7 @@ Turma: 12.ºA3
 
 Link da Aplicação Web: https://prisma-multimedia.streamlit.app
 
+
 Descrição: Explica em 2 a 3 frases o objetivo do teu Dashboard / Web App
 Proposta Escolhida: Proposta 1
 
